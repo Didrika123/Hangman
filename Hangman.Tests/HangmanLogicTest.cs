@@ -12,22 +12,23 @@ namespace Hangman.Tests
         public void AddWord_GivenStringContainingCharactersOutsideAlphabet_ThrowsException ()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<Exception>(() => hangmanLogic.AddWord("uncharacteristically" + "x"));
+            Assert.Throws<FormatException>(() => hangmanLogic.AddWord("app!e"));
         }
 
         [Fact]
-        public void AddWord_GivenStringOutsideAcceptedLength_ThrowsException()
+        public void AddWord_GivenStringWithImproperLength_ThrowsException()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<Exception>(() => hangmanLogic.AddWord("uncharacteristically" + "x"));
-            Assert.Throws<Exception>(() => hangmanLogic.AddWord("x"));
+            Assert.Throws<FormatException>(() => hangmanLogic.AddWord("uncharacteristically" + "x"));
+            Assert.Throws<FormatException>(() => hangmanLogic.AddWord("x"));
         }
 
         [Fact]
-        public void AddWord_GivenNullString_ThrowsException()
+        public void AddWord_GivenNullOrEmptyString_ThrowsException()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<Exception>(() => hangmanLogic.AddWord(null));
+            Assert.Throws<ArgumentNullException>(() => hangmanLogic.AddWord(null));
+            Assert.Throws<ArgumentNullException>(() => hangmanLogic.AddWord(""));
         }
 
         //NEW GAME
@@ -35,8 +36,8 @@ namespace Hangman.Tests
         public void NewGame_GivenIntGivenOutsideBounds_ThrowsException()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<Exception>(() => hangmanLogic.NewGame(0));
-            Assert.Throws<Exception>(() => hangmanLogic.NewGame(27));
+            Assert.Throws<ArgumentOutOfRangeException>(() => hangmanLogic.NewGame(0));
+            Assert.Throws<ArgumentOutOfRangeException>(() => hangmanLogic.NewGame(27));
         }
         [Fact]
         public void NewGame_CalledBeforeAddingWordsToTheGame_ThrowsException()
@@ -45,28 +46,28 @@ namespace Hangman.Tests
             Assert.Throws<Exception>(() => hangmanLogic.NewGame(10));
         }
 
-        //Guess
+        //GUESS
         [Fact]
         public void Guess_GivenStringWithImproperLength_ThrowsException()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<Exception>(() => hangmanLogic.Guess("applesaucesauce"));
-            Assert.Throws<Exception>(() => hangmanLogic.Guess("ap"));
-            Assert.Throws<Exception>(() => hangmanLogic.Guess(""));
+            Assert.Throws<FormatException>(() => hangmanLogic.Guess("applesauce" + "x"));
+            Assert.Throws<FormatException>(() => hangmanLogic.Guess("ap"));
         }
 
         [Fact]
         public void Guess_GivenStringContainingCharactersOutsideAlphabet_ThrowsException()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<Exception>(() => hangmanLogic.Guess("!"));
+            Assert.Throws<FormatException>(() => hangmanLogic.Guess("!"));
         }
 
         [Fact]
-        public void Guess_GivenNullString_ThrowsException()
+        public void Guess_GivenNullOrEmptyString_ThrowsException()
         {
             IHangmanLogic hangmanLogic = SetupGame();
-            Assert.Throws<NullReferenceException>(() => hangmanLogic.Guess(null));
+            Assert.Throws<ArgumentNullException>(() => hangmanLogic.Guess(null));
+            Assert.Throws<ArgumentNullException>(() => hangmanLogic.Guess(""));
         }
 
         [Fact]
@@ -107,14 +108,13 @@ namespace Hangman.Tests
             Assert.Throws<Exception>( () => hangmanLogic.Guess("y") );
         }
 
-        //GetNumRemaining Guesses, NOTE: This should probably be part of GUESS tests!
-        //also add check for double guessing so it remains unchanged. (What about Double guessing wrong letter?)
+        //GetNumRemaining
         [Fact]
         public void GetNumRemainingGuesses_AfterIncorrectGuess_ReturnsValueReducedByOne()
         {
             IHangmanLogic hangmanLogic = SetupGame();
             int numGuesses = hangmanLogic.GetNumRemainingGuesses();
-            hangmanLogic.Guess("applesauce");
+            hangmanLogic.Guess("sauceapple");
             Assert.Equal(numGuesses - 1, hangmanLogic.GetNumRemainingGuesses());
         }
 
@@ -128,13 +128,29 @@ namespace Hangman.Tests
             Assert.Equal(numGuesses, hangmanLogic.GetNumRemainingGuesses());
         }
 
+        [Fact]
+        public void GetNumRemainingGuesses_AfterGuessingSomethingAlreadyGuessed_ReturnsSameValueAsBefore()
+        {
+
+            IHangmanLogic hangmanLogic = SetupGame();
+            hangmanLogic.Guess("a"); //correct guess
+            hangmanLogic.Guess("x"); //incorrect guess
+            int numGuesses = hangmanLogic.GetNumRemainingGuesses();
+            hangmanLogic.Guess("a");
+            hangmanLogic.Guess("x");
+            Assert.Equal(numGuesses, hangmanLogic.GetNumRemainingGuesses());
+        }
 
         [Fact]
         public void GetNumRemainingGuesses_AfterImproperGuess_ReturnsSameValueAsBefore()
         {
             IHangmanLogic hangmanLogic = SetupGame();
             int numGuesses = hangmanLogic.GetNumRemainingGuesses();
-            hangmanLogic.Guess("sauceapple");
+            try
+            {
+                hangmanLogic.Guess("asdas"); //improper guess
+            }
+            catch (Exception) { }
             Assert.Equal(numGuesses, hangmanLogic.GetNumRemainingGuesses());
 
         }
