@@ -49,7 +49,7 @@ namespace Hangman
             else
             {
                 Console.Write("\n\tYour Guess: ");
-                string input = Console.ReadLine(); 
+                string input = Console.ReadLine();
                 if (input.ToLower() == "exit" || input.ToLower() == "quit")
                 {
                     _isRunning = false;
@@ -101,14 +101,7 @@ namespace Hangman
         }
         private void Clear()
         {
-            try
-            {
-                Console.Clear();
-            }
-            catch(IOException)
-            {
-                Console.WriteLine("Due to some unexpected error the console screen couldn't be cleared, but game is still playable.");
-            } //Or the xUnit testing console mock object couldnt handle the Clear() method :(
+            Console.Clear();
             Console.WriteLine(" ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
             GameTextToConsole("");
         }
@@ -151,11 +144,6 @@ namespace Hangman
         private void DrawIntro()
         {
             Clear();
-            GameTextToConsole("~~~~~~~~~~~~~");
-            GameTextToConsole("~~ HANGMAN ~~");
-            GameTextToConsole("~~~~~~~~~~~~~");
-            WaitForUserResponse();
-
             GameTextToConsole("POOR OLD JACK PUDDINGS!");
             WaitForUserResponse();
 
@@ -165,7 +153,7 @@ namespace Hangman
             GameTextToConsole(" - Off with his head!");
             GameTextToConsole(" - Hang the Man!");
             GameTextToConsole(" - To the Gallows!");
-            GameTextToConsole("Chanted the formed crowd merrily.");
+            GameTextToConsole("Chanted the forming crowd merrily.");
             WaitForUserResponse();
 
             GameTextToConsole("It was saturday and the people were eager for entertainment.");

@@ -6,8 +6,9 @@ namespace Hangman
     {
         static void Main(string[] args)
         {
-            IHangman hangman = new HangmanConsole();
-            hangman.init();
+            HangmanConsole hangman = new HangmanConsole();
+
+            hangman.Init();
             do
             {
                 hangman.Update();

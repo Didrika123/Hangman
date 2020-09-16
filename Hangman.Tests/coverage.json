@@ -1,0 +1,1391 @@
+{
+  "Hangman.dll": {
+    "C:\\Users\\monkey\\source\\repos\\Hangman\\Hangman\\Hangman.cs": {
+      "Hangman.GameIsFinishedException": {
+        "System.Void Hangman.GameIsFinishedException::.ctor(System.String)": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        }
+      },
+      "Hangman.BadGameDataException": {
+        "System.Void Hangman.BadGameDataException::.ctor(System.String)": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "Hangman.Hangman": {
+        "System.Boolean Hangman.Hangman::ContainsOnlyLowerCaseAlphabeticalLetters(System.String)": {
+          "Lines": {
+            "33": 171,
+            "34": 2824,
+            "35": 1156,
+            "36": 1156,
+            "37": 1,
+            "38": 1155,
+            "39": 170,
+            "40": 171
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 51,
+              "EndOffset": 8,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1156
+            },
+            {
+              "Line": 36,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1155
+            },
+            {
+              "Line": 36,
+              "Offset": 20,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 32,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1155
+            },
+            {
+              "Line": 34,
+              "Offset": 51,
+              "EndOffset": 53,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 170
+            }
+          ]
+        },
+        "System.String Hangman.Hangman::GetRandomWord()": {
+          "Lines": {
+            "42": 5,
+            "43": 5,
+            "44": 5,
+            "45": 5,
+            "46": 5
+          },
+          "Branches": []
+        },
+        "System.Int32 Hangman.Hangman::GetNumRemainingGuesses()": {
+          "Lines": {
+            "48": 62,
+            "49": 62,
+            "50": 62
+          },
+          "Branches": []
+        },
+        "System.Int32 Hangman.Hangman::GetStartingNumberOfGuesses()": {
+          "Lines": {
+            "53": 3,
+            "54": 3,
+            "55": 3
+          },
+          "Branches": []
+        },
+        "System.String Hangman.Hangman::GetSecretWordProgress()": {
+          "Lines": {
+            "58": 7,
+            "59": 7,
+            "60": 117,
+            "61": 48,
+            "62": 48,
+            "63": 48,
+            "64": 48,
+            "65": 7,
+            "66": 7
+          },
+          "Branches": [
+            {
+              "Line": 60,
+              "Offset": 55,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 48
+            },
+            {
+              "Line": 60,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.String Hangman.Hangman::GetIncorrectGuesses()": {
+          "Lines": {
+            "69": 4,
+            "70": 4,
+            "71": 4,
+            "72": 4,
+            "73": 0,
+            "75": 4,
+            "76": 4
+          },
+          "Branches": [
+            {
+              "Line": 72,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 72,
+              "Offset": 62,
+              "EndOffset": 75,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 72,
+              "Offset": 78,
+              "EndOffset": 80,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 78,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Boolean Hangman.Hangman::Guess(System.String)": {
+          "Lines": {
+            "78": 27,
+            "79": 27,
+            "80": 1,
+            "82": 26,
+            "83": 2,
+            "85": 24,
+            "87": 24,
+            "88": 10,
+            "90": 14,
+            "91": 0,
+            "93": 14,
+            "94": 4,
+            "97": 10,
+            "98": 7,
+            "99": 7,
+            "100": 7,
+            "101": 7,
+            "104": 3,
+            "105": 3,
+            "106": 3,
+            "107": 3,
+            "108": 3,
+            "109": 3,
+            "110": 3,
+            "112": 19
+          },
+          "Branches": [
+            {
+              "Line": 79,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 79,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 26
+            },
+            {
+              "Line": 82,
+              "Offset": 30,
+              "EndOffset": 32,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 82,
+              "Offset": 30,
+              "EndOffset": 48,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 24
+            },
+            {
+              "Line": 87,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 10
+            },
+            {
+              "Line": 87,
+              "Offset": 67,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 14
+            },
+            {
+              "Line": 90,
+              "Offset": 102,
+              "EndOffset": 104,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 90,
+              "Offset": 102,
+              "EndOffset": 115,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 14
+            },
+            {
+              "Line": 93,
+              "Offset": 132,
+              "EndOffset": 134,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 4
+            },
+            {
+              "Line": 93,
+              "Offset": 132,
+              "EndOffset": 148,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 10
+            },
+            {
+              "Line": 93,
+              "Offset": 153,
+              "EndOffset": 155,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 4
+            },
+            {
+              "Line": 93,
+              "Offset": 153,
+              "EndOffset": 166,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 10
+            },
+            {
+              "Line": 97,
+              "Offset": 182,
+              "EndOffset": 184,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 7
+            },
+            {
+              "Line": 97,
+              "Offset": 182,
+              "EndOffset": 208,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 3
+            },
+            {
+              "Line": 105,
+              "Offset": 228,
+              "EndOffset": 230,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 3
+            },
+            {
+              "Line": 105,
+              "Offset": 228,
+              "EndOffset": 259,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Boolean Hangman.Hangman::Guess(System.Char)": {
+          "Lines": {
+            "114": 18,
+            "115": 18,
+            "116": 0,
+            "118": 18,
+            "120": 18,
+            "121": 5,
+            "123": 13,
+            "124": 260,
+            "125": 117,
+            "126": 117,
+            "127": 12,
+            "128": 12,
+            "129": 12,
+            "130": 12,
+            "132": 117,
+            "134": 13,
+            "135": 6,
+            "136": 6,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 6,
+            "143": 7,
+            "144": 7,
+            "145": 6,
+            "146": 6,
+            "147": 6,
+            "148": 6,
+            "149": 7,
+            "151": 13
+          },
+          "Branches": [
+            {
+              "Line": 115,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 115,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 18
+            },
+            {
+              "Line": 120,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 14
+            },
+            {
+              "Line": 120,
+              "Offset": 33,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 120,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 5
+            },
+            {
+              "Line": 120,
+              "Offset": 45,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 13
+            },
+            {
+              "Line": 124,
+              "Offset": 122,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 117
+            },
+            {
+              "Line": 126,
+              "Offset": 84,
+              "EndOffset": 86,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 12
+            },
+            {
+              "Line": 126,
+              "Offset": 84,
+              "EndOffset": 99,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 117
+            },
+            {
+              "Line": 124,
+              "Offset": 122,
+              "EndOffset": 124,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 13
+            },
+            {
+              "Line": 134,
+              "Offset": 129,
+              "EndOffset": 131,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 6
+            },
+            {
+              "Line": 136,
+              "Offset": 158,
+              "EndOffset": 160,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 136,
+              "Offset": 158,
+              "EndOffset": 169,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 6
+            },
+            {
+              "Line": 134,
+              "Offset": 129,
+              "EndOffset": 174,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 7
+            },
+            {
+              "Line": 144,
+              "Offset": 199,
+              "EndOffset": 201,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 6
+            },
+            {
+              "Line": 144,
+              "Offset": 199,
+              "EndOffset": 230,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Boolean Hangman.Hangman::IsGameFinished()": {
+          "Lines": {
+            "154": 52,
+            "155": 52,
+            "156": 52
+          },
+          "Branches": [
+            {
+              "Line": 155,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 50
+            },
+            {
+              "Line": 155,
+              "Offset": 7,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Hangman.Hangman::NewGame(System.Int32,System.String)": {
+          "Lines": {
+            "159": 52,
+            "160": 52,
+            "161": 2,
+            "163": 50,
+            "165": 50,
+            "166": 2,
+            "168": 48,
+            "169": 3,
+            "171": 45,
+            "172": 45,
+            "173": 45,
+            "174": 45,
+            "175": 45,
+            "176": 45,
+            "178": 912,
+            "179": 411,
+            "180": 45
+          },
+          "Branches": [
+            {
+              "Line": 160,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 160,
+              "Offset": 9,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 50
+            },
+            {
+              "Line": 165,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 49
+            },
+            {
+              "Line": 165,
+              "Offset": 37,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 165,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 165,
+              "Offset": 49,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 48
+            },
+            {
+              "Line": 168,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 47
+            },
+            {
+              "Line": 168,
+              "Offset": 78,
+              "EndOffset": 80,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 46
+            },
+            {
+              "Line": 168,
+              "Offset": 69,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 168,
+              "Offset": 78,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            },
+            {
+              "Line": 168,
+              "Offset": 95,
+              "EndOffset": 97,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 3
+            },
+            {
+              "Line": 168,
+              "Offset": 95,
+              "EndOffset": 108,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 45
+            },
+            {
+              "Line": 178,
+              "Offset": 224,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 411
+            },
+            {
+              "Line": 178,
+              "Offset": 224,
+              "EndOffset": 226,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 45
+            }
+          ]
+        },
+        "System.Void Hangman.Hangman::NewGame(System.Int32)": {
+          "Lines": {
+            "182": 5,
+            "183": 5,
+            "184": 4
+          },
+          "Branches": []
+        },
+        "System.Boolean Hangman.Hangman::PlayerWon()": {
+          "Lines": {
+            "187": 3,
+            "188": 3,
+            "189": 3
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.Hangman::UseWordsFromTextFile(System.String)": {
+          "Lines": {
+            "192": 2,
+            "193": 2,
+            "194": 2,
+            "197": 2,
+            "198": 2,
+            "200": 1,
+            "201": 1,
+            "203": 2,
+            "204": 2,
+            "205": 1,
+            "206": 2,
+            "208": 220,
+            "209": 109,
+            "210": 109,
+            "211": 109,
+            "212": 0,
+            "213": 109,
+            "215": 1,
+            "216": 0,
+            "217": 1,
+            "218": 1
+          },
+          "Branches": [
+            {
+              "Line": 204,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 204,
+              "Offset": 68,
+              "EndOffset": 77,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 208,
+              "Offset": 164,
+              "EndOffset": 90,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 109
+            },
+            {
+              "Line": 211,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 109
+            },
+            {
+              "Line": 211,
+              "Offset": 118,
+              "EndOffset": 120,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 109
+            },
+            {
+              "Line": 211,
+              "Offset": 108,
+              "EndOffset": 133,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 211,
+              "Offset": 118,
+              "EndOffset": 133,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 211,
+              "Offset": 138,
+              "EndOffset": 140,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 211,
+              "Offset": 138,
+              "EndOffset": 148,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 109
+            },
+            {
+              "Line": 208,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 215,
+              "Offset": 179,
+              "EndOffset": 181,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 215,
+              "Offset": 179,
+              "EndOffset": 203,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Hangman.Hangman::.ctor()": {
+          "Lines": {
+            "21": 34,
+            "23": 34
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\monkey\\source\\repos\\Hangman\\Hangman\\HangmanConsole.cs": {
+      "Hangman.HangmanConsole": {
+        "System.Boolean Hangman.HangmanConsole::IsRunning()": {
+          "Lines": {
+            "16": 2,
+            "17": 2,
+            "18": 2
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::Draw()": {
+          "Lines": {
+            "21": 2,
+            "22": 2,
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "27": 2,
+            "28": 0,
+            "30": 2,
+            "31": 2
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 42,
+              "EndOffset": 44,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 42,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Hangman.HangmanConsole::Init()": {
+          "Lines": {
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::Update()": {
+          "Lines": {
+            "42": 2,
+            "44": 2,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "50": 2,
+            "51": 2,
+            "52": 2,
+            "53": 2,
+            "54": 1,
+            "55": 1,
+            "56": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "61": 2,
+            "63": 2
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 14,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 53,
+              "Offset": 80,
+              "EndOffset": 82,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 80,
+              "EndOffset": 100,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 103,
+              "EndOffset": 105,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 103,
+              "EndOffset": 116,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Hangman.HangmanConsole::LoadGameData()": {
+          "Lines": {
+            "65": 1,
+            "67": 1,
+            "68": 1,
+            "69": 1,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 1
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::LetUserGuess(System.String)": {
+          "Lines": {
+            "78": 1,
+            "80": 1,
+            "81": 1,
+            "82": 0,
+            "83": 1,
+            "84": 1,
+            "85": 1,
+            "86": 1,
+            "87": 1,
+            "88": 1,
+            "89": 1,
+            "90": 1,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 1
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::GameTextToConsole(System.String)": {
+          "Lines": {
+            "99": 61,
+            "100": 61,
+            "101": 61
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::Clear()": {
+          "Lines": {
+            "103": 9,
+            "105": 9,
+            "106": 9,
+            "107": 9,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 9,
+            "113": 9,
+            "114": 9
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::WaitForUserResponse(System.String)": {
+          "Lines": {
+            "116": 6,
+            "117": 6,
+            "118": 6,
+            "119": 6,
+            "120": 6,
+            "121": 6,
+            "122": 6
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::DrawIncorrectGuesses()": {
+          "Lines": {
+            "124": 2,
+            "125": 2,
+            "126": 2,
+            "127": 0,
+            "128": 2,
+            "129": 2
+          },
+          "Branches": [
+            {
+              "Line": 126,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 126,
+              "Offset": 24,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Hangman.HangmanConsole::DrawSecretWordProgress()": {
+          "Lines": {
+            "131": 2,
+            "132": 2,
+            "133": 2,
+            "134": 2,
+            "135": 2
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::DrawGameResult()": {
+          "Lines": {
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0
+          },
+          "Branches": [
+            {
+              "Line": 138,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 138,
+              "Offset": 14,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Hangman.HangmanConsole::DrawIntro()": {
+          "Lines": {
+            "152": 1,
+            "153": 1,
+            "154": 1,
+            "155": 1,
+            "157": 1,
+            "158": 1,
+            "160": 1,
+            "161": 1,
+            "162": 1,
+            "163": 1,
+            "164": 1,
+            "166": 1,
+            "167": 1,
+            "168": 1,
+            "169": 1,
+            "171": 1,
+            "172": 1,
+            "173": 1,
+            "174": 1,
+            "175": 1,
+            "177": 1,
+            "178": 1,
+            "179": 1,
+            "180": 1,
+            "182": 1
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.HangmanConsole::DrawHangman()": {
+          "Lines": {
+            "184": 2,
+            "185": 2,
+            "186": 2,
+            "188": 2,
+            "191": 2,
+            "192": 2,
+            "193": 2,
+            "194": 2,
+            "195": 2,
+            "196": 2,
+            "197": 2,
+            "198": 2,
+            "199": 2,
+            "200": 2,
+            "201": 2,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0,
+            "307": 0,
+            "308": 0,
+            "309": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0,
+            "316": 0,
+            "317": 0,
+            "318": 0,
+            "319": 0,
+            "320": 0,
+            "321": 0,
+            "323": 2
+          },
+          "Branches": [
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 220,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 345,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 470,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 595,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 720,
+              "Path": 6,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 845,
+              "Path": 7,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 970,
+              "Path": 8,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 1095,
+              "Path": 9,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 1220,
+              "Path": 10,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 1342,
+              "Path": 11,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 188,
+              "Offset": 41,
+              "EndOffset": 1464,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Hangman.HangmanConsole::.ctor()": {
+          "Lines": {
+            "11": 1,
+            "12": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\monkey\\source\\repos\\Hangman\\Hangman\\Program.cs": {
+      "Hangman.Program": {
+        "System.Void Hangman.Program::Main(System.String[])": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 38,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}
