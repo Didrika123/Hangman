@@ -12,7 +12,7 @@ using System.Threading;
 
 namespace HangmanGDI
 {
-    public partial class Form1 : Form //SO make HANGMAN a normal class that has a cOMPOSITE HANGMANDRAWER INTERFACE. (Which this class and console uses. -> then hangman can call draw/getinput etc)
+    public partial class Form1 : Form 
     {
         private const int NUM_GUESSES = 10;
         private Hangman.Hangman _hangman = new Hangman.Hangman();

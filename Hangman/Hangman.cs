@@ -18,7 +18,7 @@ namespace Hangman
 
     public class Hangman : IHangman
     {
-        private string[] _words = { "sinner", "heretic", "anarchist", "devil", "hell", "demon", "cucumber", "asparagus", "soybean", "tofu", "orange", "banana" }; //default words
+        private string[] _words = { "sinner", "heretic", "anarchist", "devil", "hell", "demon", "cucumber", "asparagus", "soy", "tofu", "orange", "banana" }; //default words
         private StringBuilder _incorrectCharGuesses;
         readonly private List<string> _incorrectWordGuesses = new List<string>();
         private char[] _secretWordProgress;
@@ -62,7 +62,7 @@ namespace Hangman
                 spacesBetweenChars.Append(Char.ToUpper(ch));
                 spacesBetweenChars.Append(' ');
             }
-            return spacesBetweenChars.ToString(); ;
+            return spacesBetweenChars.ToString();
         }
 
         public string GetIncorrectGuesses()
@@ -70,7 +70,7 @@ namespace Hangman
             string niceStringOfIncorrectCharGuesses = String.Join(", ", _incorrectCharGuesses.ToString().ToCharArray()).ToUpper();
             string niceStringOfIncorrectWordGuesses = String.Join(", ", _incorrectWordGuesses).ToUpper();
             if (niceStringOfIncorrectWordGuesses.Length > 0 && niceStringOfIncorrectCharGuesses.Length > 0)
-                niceStringOfIncorrectWordGuesses = niceStringOfIncorrectWordGuesses + ", ";
+                niceStringOfIncorrectWordGuesses += ", ";
 
             return niceStringOfIncorrectWordGuesses + niceStringOfIncorrectCharGuesses; 
         }

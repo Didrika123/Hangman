@@ -40,7 +40,6 @@ namespace Hangman
         /// </summary>     
         /// <returns>
         ///      returns true if argument matches a single letter or the entire word
-        ///      return false otherwise OR if game is over
         /// </returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="FormatException"></exception>
@@ -53,7 +52,6 @@ namespace Hangman
         /// </summary>     
         /// <returns>
         ///      returns true if argument matches a single letter
-        ///      return false otherwise OR if game is over
         /// </returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="FormatException"></exception>
@@ -99,7 +97,8 @@ namespace Hangman
 
 
         /// <summary>
-        ///      Replaces default wordlist (If no error) with a new one containing words from specified file.
+        ///       Replaces default wordlist with a new one containing comma-separated words from specified textfile.
+        ///       If an exception occurs it will revert back to default word list.
         /// </summary>     
         /// <exception cref="FileNotFoundException"></exception>
         /// <exception cref="BadGameDataException"></exception>
